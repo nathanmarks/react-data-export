@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {saveAs} from "file-saver";
-import XLSX from "xlsx";
+import XLSX from "xlsx-style";
 
 import ExcelSheet from "../elements/ExcelSheet";
 import {strToArrBuffer, excelSheetFromAoA, excelSheetFromDataSet} from "../utils/DataUtil";
@@ -121,7 +121,7 @@ class ExcelFile extends React.Component {
         } else {
             return (<span onClick={this.handleDownload}>{element}</span>);
         }
-        
+
     }
 }
 
